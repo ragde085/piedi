@@ -292,18 +292,57 @@ img {
   background: var(--white);
 }
 
-.location__content {
+.locations__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
-.location__info h3 {
+.location-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 2rem;
+  position: relative;
+  border: 1px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-light);
+}
+
+.location-card__badge {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.75rem;
+}
+
+.location-card h3, .location__info h3 {
   font-size: 1.3rem;
   color: var(--navy);
   font-weight: 700;
   margin-bottom: 1rem;
+}
+
+.location-card__map-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+
+.location-card__map-link:hover {
+  color: var(--primary-dark);
 }
 
 .location__address {
@@ -467,7 +506,7 @@ img {
     font-size: 1.6rem;
   }
 
-  .location__content {
+  .locations__grid {
     grid-template-columns: 1fr;
   }
 
