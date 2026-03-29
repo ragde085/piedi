@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" width="360" height="280">
+  <!-- Foot outline -->
+  <path d="M90 240 C60 200 40 160 50 120 C55 90 70 65 90 50 C100 42 108 40 112 42"
+        stroke="#1b1464" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- Toes -->
+  <path d="M120 48 C122 38 128 30 135 28 C140 27 142 32 138 40"
+        stroke="#1b1464" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M145 38 C148 28 155 22 162 22 C167 22 168 28 164 36"
+        stroke="#1b1464" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M168 36 C172 28 178 24 184 26 C188 28 186 34 182 40"
+        stroke="#1b1464" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- "Piedi" text -->
+  <text x="110" y="160" font-family="'Brush Script MT', 'Segoe Script', cursive"
+        font-size="90" fill="#0d9b76" font-style="italic">Piedi</text>
+
+  <!-- "A sus Pies" text -->
+  <text x="120" y="220" font-family="'Brush Script MT', 'Segoe Script', cursive"
+        font-size="52" fill="#1b1464" font-style="italic">A sus Pies</text>
+</svg>
